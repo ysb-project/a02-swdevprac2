@@ -1,0 +1,168 @@
+body{
+    background-color: blanchedalmond;
+}
+
+h1 {
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: bold;
+    text-align: center;
+    font-size: 300%;
+    color: #333;
+    text-decoration-line: underline;
+}
+
+.dog-details {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    color:brown;
+    margin: 50px;
+    border: 3px dashed;
+    border-color: lightcoral;
+    padding: 15px;
+}
+
+.dog-details img{
+    width: 600px;
+    height: 500px;
+}
+
+.dog-details a{
+    text-align: center;
+}
+
+#dog-pane{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    #dog-pane {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.my-name{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 110%;
+    background-color: white;
+    border: 3px dashed;
+    border-color: lightcoral;
+    padding: 15px;
+    border-radius: 20px;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.my-name-1{
+    font-family: 'Courier New', Courier, monospace;
+    place-items: left;
+    font-size: 110%;
+    background-color: white;
+    border: 3px dashed;
+    border-color: lightcoral;
+    padding: 15px;
+    border-radius: 20px;
+    display: block;
+    width: fit-content;
+    
+}
+
+
+form{
+    font-family: 'Courier New', Courier, monospace;
+    place-items: left;
+    background-color: white;
+    border: 3px dashed;
+    border-color: lightcoral;
+    border-radius: 20px;
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    padding: 50px;
+    line-height: 180%;
+}
+
+button{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:brown;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+    font-style: bold;
+    font-size: 120%;
+    display: block;           
+    width: fit-content;
+    margin: 30px auto 0 auto;
+}
+
+button:hover {
+    background-color: #5c1a1a;
+    transform: scale(1.05);   
+    transition: 0.2s;
+}
+
+form h2{
+    text-decoration-line: underline;
+}
+
+.personal-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px 10px; 
+    align-items: center; 
+}
+
+.personal-grid label {
+    white-space: nowrap; 
+    font-weight: bold;
+}
+
+.personal-grid input {
+    width: 90%;
+    padding: 5px;
+}
+
+
+#enviroment label{
+    white-space: nowrap; 
+    font-weight: bold;
+    line-height: 3;
+}
+
+
+#enviroment input{
+    padding: 5px;
+}
+
+#enviroment select{
+    padding: 5px;
+}
+
+.checkbox-group{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.checkbox-group label{
+    white-space: normal !important;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-top: 15px;
+    transform: scale(1.5);
+}
+
+#enviroment input[type="text"] {
+    width: 88%;
+}
+
+#enviroment select{
+    width: 90%;
+}
