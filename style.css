@@ -109,6 +109,8 @@ button:hover {
 
 form h2{
     text-decoration-line: underline;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
 .personal-grid {
@@ -132,7 +134,7 @@ form h2{
 #enviroment label{
     white-space: nowrap; 
     font-weight: bold;
-    line-height: 3;
+    line-height: 4;
 }
 
 
@@ -155,7 +157,7 @@ form h2{
 }
 
 .checkbox-group input[type="checkbox"] {
-    margin-top: 15px;
+    margin-top: 25px;
     transform: scale(1.5);
 }
 
@@ -165,4 +167,10 @@ form h2{
 
 #enviroment select{
     width: 90%;
+}
+
+.valid-error{
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    font-size: 0.8em;
 }
