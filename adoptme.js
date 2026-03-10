@@ -3,7 +3,7 @@ function CheckPetNumbers(){
     const numOfpet = document.getElementById("pet-numbers");
     const num = parseInt(numOfpet.value); 
     const petError = document.getElementById("pet-error");
-   if (isNaN(num) || num <= 0 || num >= 100) { 
+   if (isNaN(num) || num < 0 || num > 100) { 
         petError.innerHTML = "กรุณาใส่ค่าระหว่าง 0 ถึง 100";
         return false;
     } else {
@@ -60,7 +60,7 @@ function CheckConfirm(){
     }
 
     const petError = document.getElementById("pet-error");
-    if (petNum === "" || petNum <= 0 || petNum >= 100) {
+    if (petNum === "" || petNum < 0 || petNum > 100) {
         /*alert("กรุณาใส่จำนวนสัตว์เลี้ยงเป็นตัวเลข ระหว่าง 0 ถึง 100 เท่านั้น");*/
         petError.innerHTML = "กรุณาใส่ค่าระหว่าง 0 ถึง 100";
         alert("กรุณาใส่ค่าระหว่าง 0 ถึง 100");
